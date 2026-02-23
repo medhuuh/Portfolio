@@ -99,10 +99,14 @@
         }
 
         .logo {
-            font-family: 'Fredoka', sans-serif;
-            font-size: 22px;
-            font-weight: 700;
-            color: var(--primary);
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            height: 40px;
+            width: auto;
+            object-fit: contain;
         }
 
         .nav-links {
@@ -1294,7 +1298,9 @@
     <!-- Navigation -->
     <nav>
         <div class="container">
-            <div class="logo">Midhun Sha</div>
+            <div class="logo">
+                <img src="assets/Logo/New Project 4 [4C42701].png" alt="Midhun Sha Logo">
+            </div>
             <div class="mobile-menu-btn" id="menu-toggle">
                 <i class="fas fa-bars"></i>
             </div>
