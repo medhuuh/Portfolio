@@ -1196,45 +1196,53 @@
                 height: 45px;
             }
 
-            .mobile-menu-btn {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                width: 45px;
-                height: 45px;
+            #home {
+                background: url('assets/BG/BG for Mobile responsive.png') center bottom / cover no-repeat;
+                min-height: 100vh;
                 padding: 0;
-                background: #fff;
-                color: #1e293b;
-                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+                display: flex;
+                flex-direction: column;
             }
 
             #home>.container {
                 padding-left: 24px;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                padding-top: 100px;
+                padding-bottom: 60px;
+            }
+
+            .hero-name-top {
+                position: static;
+                font-size: 16px;
+                font-weight: 500;
+                margin-bottom: 20px;
+            }
+
+            .hero-bottom {
+                position: static;
+                margin-top: auto;
             }
 
             .hero-big-text {
-                font-size: 72px;
-                line-height: 0.85;
+                font-size: 64px;
+                line-height: 0.9;
                 font-weight: 800;
                 letter-spacing: -2px;
+            }
+
+            .hero-meta {
+                flex-direction: column;
+                gap: 4px;
+                align-items: flex-start;
+                margin-top: 10px;
             }
 
             .hero-subtitle {
                 font-size: 16px;
                 font-weight: 500;
-                color: #64748b;
-            }
-
-            .hero-name-top {
-                top: 110px;
-                left: 24px;
-                font-size: 16px;
-                font-weight: 500;
-            }
-
-            .hero-bottom {
-                bottom: 10%;
-                left: 24px;
             }
 
             .hero-year {
@@ -1242,78 +1250,65 @@
                 font-weight: 700;
             }
 
+            .about-layout {
+                flex-direction: column-reverse;
+                text-align: center;
+                gap: 40px;
+            }
+
             .about-name {
-                font-size: 38px;
+                font-size: 34px;
             }
 
             .about-photo {
-                width: 220px;
-                height: 220px;
+                width: 200px;
+                height: 200px;
+                margin: 0 auto;
             }
 
-            .projects-grid {
-                grid-template-columns: 1fr;
+            .about-social-row {
+                justify-content: center;
             }
 
+            .about-contact-list {
+                align-items: center;
+            }
+
+            .skills-layout {
+                flex-direction: column;
+                gap: 40px;
+            }
+
+            .projects-grid,
             .edu-grid,
             .cert-grid {
                 grid-template-columns: 1fr;
+                gap: 20px;
+            }
+
+            .section-heading,
+            .section-title h2 {
+                font-size: 30px;
             }
 
             .action-row {
                 flex-direction: column;
-                align-items: center;
+                gap: 15px;
             }
 
             .action-btn {
                 width: 100%;
-                max-width: 300px;
                 justify-content: center;
             }
         }
 
         @media (max-width: 480px) {
+            .hero-big-text {
+                font-size: 56px;
+            }
+
             .container {
                 padding: 0 20px;
-            }
-
-            #home>.container {
-                padding-left: 24px;
-            }
-
-            .hero-name-top {
-                top: 90px;
-                left: 24px;
-            }
-
-            .hero-bottom {
-                bottom: 12%;
-                left: 24px;
-            }
-
-            .hero-big-text {
-                font-size: 64px;
-                line-height: 0.85;
-            }
-
-            .hero-meta {
-                flex-direction: column;
-                gap: 2px;
-                align-items: flex-start;
-            }
-
-            .about-name {
-                font-size: 32px;
-            }
-
-            .section-heading,
-            .section-title h2 {
-                font-size: 28px;
-            }
-
-            .skills-title,
-            .tools-title {
-                font-size: 24px;
             }
         }
     </style>
